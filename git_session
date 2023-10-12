@@ -1,0 +1,1259 @@
+Script started on 2023-10-11 23:29:43+05:30 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="120" LINES="30"]
+[?2004h(base) ]0;vyeshma@TIGER01388: ~[01;32mvyeshma@TIGER01388[00m:[01;34m~[00m$ git --version
+[?2004lgit version 2.34.1
+[?2004h(base) ]0;vyeshma@TIGER01388: ~[01;32mvyeshma@TIGER01388[00m:[01;34m~[00m$ git clone [7mgit@github.com:Vyeshmavanka77/Assignment1.0.git[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit@github.com:Vyeshmavanka77/Assignment1.0.git
+[?2004lCloning into 'Assignment1.0'...
+remote: Enumerating objects: 3, done.[K
+remote: Counting objects:  33% (1/3)[Kremote: Counting objects:  66% (2/3)[Kremote: Counting objects: 100% (3/3)[Kremote: Counting objects: 100% (3/3), done.[K
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0[K
+Receiving objects:  33% (1/3)Receiving objects:  66% (2/3)Receiving objects: 100% (3/3)Receiving objects: 100% (3/3), done.
+[?2004h(base) ]0;vyeshma@TIGER01388: ~[01;32mvyeshma@TIGER01388[00m:[01;34m~[00m$ git init
+[?2004lReinitialized existing Git repository in /home/vyeshma/.git/
+[?2004h(base) ]0;vyeshma@TIGER01388: ~[01;32mvyeshma@TIGER01388[00m:[01;34m~[00m$ git config --list
+[?2004l[?1h=user.name=vyeshma.vanka[m
+user.email=vyeshma.vanka@tigeranalytics.com[m
+init.defaultbranch=main[m
+alias.co=checkout[m
+alias.br=branch[m
+alias.st=status[m
+core.repositoryformatversion=0[m
+core.filemode=true[m
+core.bare=false[m
+core.logallrefupdates=true[m
+[K[?1l>[?2004h(base) ]0;vyeshma@TIGER01388: ~[01;32mvyeshma@TIGER01388[00m:[01;34m~[00m$ git config --gloval[K[K[Kbal user[K[K[K[K[K[K[K[K[K[K[K[K[Kuser.name
+[?2004lvyeshma.vanka
+[?2004h(base) ]0;vyeshma@TIGER01388: ~[01;32mvyeshma@TIGER01388[00m:[01;34m~[00m$ git config --list
+[?2004l[?1h=user.name=vyeshma.vanka[m
+user.email=vyeshma.vanka@tigeranalytics.com[m
+init.defaultbranch=main[m
+alias.co=checkout[m
+alias.br=branch[m
+alias.st=status[m
+core.repositoryformatversion=0[m
+core.filemode=true[m
+core.bare=false[m
+core.logallrefupdates=true[m
+[K[?1l>[?2004h(base) ]0;vyeshma@TIGER01388: ~[01;32mvyeshma@TIGER01388[00m:[01;34m~[00m$ [K(base) ]0;vyeshma@TIGER01388: ~[01;32mvyeshma@TIGER01388[00m:[01;34m~[00m$ git --help
+[?2004lusage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone     Clone a repository into a new directory
+   init      Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add       Add file contents to the index
+   mv        Move or rename a file, a directory, or a symlink
+   restore   Restore working tree files
+   rm        Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect    Use binary search to find the commit that introduced a bug
+   diff      Show changes between commits, commit and working tree, etc
+   grep      Print lines matching a pattern
+   log       Show commit logs
+   show      Show various types of objects
+   status    Show the working tree status
+
+grow, mark and tweak your common history
+   branch    List, create, or delete branches
+   commit    Record changes to the repository
+   merge     Join two or more development histories together
+   rebase    Reapply commits on top of another base tip
+   reset     Reset current HEAD to the specified state
+   switch    Switch branches
+   tag       Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch     Download objects and refs from another repository
+   pull      Fetch from and integrate with another repository or a local branch
+   push      Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+[?2004h(base) ]0;vyeshma@TIGER01388: ~[01;32mvyeshma@TIGER01388[00m:[01;34m~[00m$ ls
+[?2004l[0m[01;34mAssignment[0m  [01;34mAssignment1.0[0m  [01;34mPractice[0m  git_session  [01;34mminiconda3[0m  my_git_session  my_git_session1  my_miniconda_session  my_unix_session
+[?2004h(base) ]0;vyeshma@TIGER01388: ~[01;32mvyeshma@TIGER01388[00m:[01;34m~[00m$ [7mgit@github.com:Vyeshmavanka77/Assignment1.0.git[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pgit@github.com:Vyeshmavanka77/Assignment1.0.gi[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcd Assignment1.0
+[?2004l[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git init
+[?2004lReinitialized existing Git repository in /home/vyeshma/Assignment1.0/.git/
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ nano file.txt
+[?2004l[?2004h[?1049h[22;0;0t[1;35r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[33;69H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 6.2                                                          file.txt                                                                    [1;147H(B[m[34d(B[0;7m^G(B[m Help[34;17H(B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut[34;65H(B[0;7m^T(B[m Execute[81G(B[0;7m^C(B[m Location     (B[0;7mM-U(B[m Undo[34;113H(B[0;7mM-A(B[m Set Mark    (B[0;7mM-](B[m To Bracket[35d(B[0;7m^X(B[m Exit[35;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste[35;65H(B[0;7m^J(B[m Justify[81G(B[0;7m^/(B[m Go To Line   (B[0;7mM-E(B[m Redo[35;113H(B[0;7mM-6(B[m Copy[35;129H(B[0;7m^Q(B[m Where Was[2d[?12l[?25h[?25l[1;82H(B[0;7m*[147G(B[m[?12l[?25h[2d"[?25l[?12l[?25hh[?25l[?12l[?25he[?25l[?12l[?25hl[?25l[?12l[?25hl[?25l[?12l[?25ho[?25l[?12l[?25h [?25l[?12l[?25hi[?25l[?12l[?25h [?25l[?12l[?25ha[?25l[?12l[?25hm[?25l[?12l[?25h [?25l[?12l[?25hv[?25l[?12l[?25hy[?25l[?12l[?25he[?25l[?12l[?25hs[?25l[?12l[?25hh[?25l[?12l[?25hm[?25l[?12l[?25ha[?25l[33d[K[?12l[?25h[2;20H"[?25l[33;68H(B[0;7m[ Writing... ](B[m[1;82H(B[0;7m [147G(B[m[33;67H(B[0;7m[ Wrote 1 line ](B[m[?12l[?25h[2;21H[?25l[33d[J[35d[?12l[?25h[35;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git add file.txt
+[?2004l[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git commit -m 'First'
+[?2004l[main 20ad669] First
+ 1 file changed, 1 insertion(+)
+ create mode 100644 file.txt
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git status
+[?2004lOn branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ echo 'myproject'>README
+[?2004l[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git status
+[?2004lOn branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mREADME[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git add README
+[?2004l[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git status
+[?2004lOn branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   README[m
+
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ nano contributor.md
+[?2004l[?2004h[?1049h[22;0;0t[1;35r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[33;69H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 6.2                                                       contributor.md                                                                 [1;147H(B[m[34d(B[0;7m^G(B[m Help[34;17H(B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut[34;65H(B[0;7m^T(B[m Execute[81G(B[0;7m^C(B[m Location     (B[0;7mM-U(B[m Undo[34;113H(B[0;7mM-A(B[m Set Mark    (B[0;7mM-](B[m To Bracket[35d(B[0;7m^X(B[m Exit[35;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste[35;65H(B[0;7m^J(B[m Justify[81G(B[0;7m^/(B[m Go To Line   (B[0;7mM-E(B[m Redo[35;113H(B[0;7mM-6(B[m Copy[35;129H(B[0;7m^Q(B[m Where Was[2d[?12l[?25h[?25l[1;85H(B[0;7m*[147G(B[m[?12l[?25h[2dH[?25l[?12l[?25he[?25l[?12l[?25hl[?25l[?12l[?25hl[?25l[?12l[?25ho[?25l[?12l[?25h [?25l[?12l[?25hg[?25l[?12l[?25ho[?25l[?12l[?25ho[?25l[?12l[?25hd[?25l[?12l[?25h [?25l[?12l[?25hm[?25l[?12l[?25ho[?25l[?12l[?25hr[?25l[?12l[?25hn[?25l[?12l[?25hi[?25l[?12l[?25hn[?25l[?12l[?25hg[?25l[?12l[?25h [?25l[33d[K[?12l[?25h[2;20Hv[?25l[?12l[?25h [?25l[?12l[?25he[?25l[?12l[?25hv[?25l[?12l[?25he[?25l[?12l[?25hr[?25l[?12l[?25hy[?25l[?12l[?25ho[?25l[?12l[?25hn[?25l[?12l[?25he[?25l[3d[?12l[?25h[?25l[33;68H(B[0;7m[ Writing... ](B[m[1;85H(B[0;7m [147G(B[m[33;66H(B[0;7m[ Wrote 2 lines ](B[m[?12l[?25h[3d[?25l[33d[J[35d[?12l[?25h[35;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ nan\[K[K[K[Kgit add contributor.md
+[?2004l[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git status
+[?2004lOn branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   README[m
+	[32mnew file:   contributor.md[m
+
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ vim contributor.md
+[?2004l[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;35r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[35;1H"contributor.md" 2L, 29B[2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[1;1HHello good morning everyone[2;1H[K[3;1H[94m~                                                                                                                                                   [4;1H~                                                                                                                                                   [5;1H~                                                                                                                                                   [6;1H~                                                                                                                                                   [7;1H~                                                                                                                                                   [8;1H~                                                                                                                                                   [9;1H~                                                                                                                                                   [10;1H~                                                                                                                                                   [11;1H~                                                                                                                                                   [12;1H~                                                                                                                                                   [13;1H~                                                                                                                                                   [14;1H~                                                                                                                                                   [15;1H~                                                                                                                                                   [16;1H~                                                                                                                                                   [17;1H~                                                                                                                                                   [18;1H~                                                                                                                                                   [19;1H~                                                                                                                                                   [20;1H~                                                                                                                                                   [21;1H~                                                                                                                                                   [22;1H~                                                                                                                                                   [23;1H~                                                                                                                                                   [24;1H~                                                                                                                                                   [25;1H~                                                                                                                                                   [26;1H~                                                                                                                                                   [27;1H~                                                                                                                                                   [28;1H~                                                                                                                                                   [29;1H~                                                                                                                                                   [30;1H~                                                                                                                                                   [31;1H~                                                                                                                                                   [32;1H~                                                                                                                                                   [33;1H~                                                                                                                                                   [34;1H~                                                                                                                                                   [m[35;131H1,1[11CAll[1;1H[?25h[?12$p[?25l[35;121H~@k[1;1H[35;121H   [2;1H[35;131H2,0-1[2;1H[?25h[?25l[35;121H~@k[2;1H[35;121H   [2;1H[35;1H[1m-- INSERT --[m[35;13H[K[35;131H2,1[11CAll[2;1H[?25h[?25lh[35;133H2[2;2H[?25h[?25li[35;133H3[2;3H[?25h[35;1H[K[2;2H[?25l[35;121H^[[2;2H[35;121H  [2;3H[35;131H2,2[11CAll[2;2H[?25h[?25l[35;121H;[2;2H[35;121H [2;2H[?25h[?25l[35;121H~@k[2;2H[35;121H   [2;1H[35;133H1[2;1H[?25h[?25l[35;121H^[[2;1H[35;121H  [2;1H[35;121H^[[2;1H[35;121H  [2;1H[?25h[?25l[35;121H:[2;1H[35;121H[K[35;1H:[?25hwq[?25l[?2004l[>4;m"contributor.md" 2L, 31B written[23;2t[23;1t
+[?1004l[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git status
+[?2004lOn branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   README[m
+	[32mnew file:   contributor.md[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   contributor.md[m
+
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git status -s
+[?2004l[32mA[m  README
+[32mA[m[31mM[m contributor.md
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ vim contributor.md
+[?2004l[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;35r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[35;1H"contributor.md" 2L, 31B[2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[1;1HHello good morning everyone
+hi[2;3H[K[3;1H[94m~                                                                                                                                                   [4;1H~                                                                                                                                                   [5;1H~                                                                                                                                                   [6;1H~                                                                                                                                                   [7;1H~                                                                                                                                                   [8;1H~                                                                                                                                                   [9;1H~                                                                                                                                                   [10;1H~                                                                                                                                                   [11;1H~                                                                                                                                                   [12;1H~                                                                                                                                                   [13;1H~                                                                                                                                                   [14;1H~                                                                                                                                                   [15;1H~                                                                                                                                                   [16;1H~                                                                                                                                                   [17;1H~                                                                                                                                                   [18;1H~                                                                                                                                                   [19;1H~                                                                                                                                                   [20;1H~                                                                                                                                                   [21;1H~                                                                                                                                                   [22;1H~                                                                                                                                                   [23;1H~                                                                                                                                                   [24;1H~                                                                                                                                                   [25;1H~                                                                                                                                                   [26;1H~                                                                                                                                                   [27;1H~                                                                                                                                                   [28;1H~                                                                                                                                                   [29;1H~                                                                                                                                                   [30;1H~                                                                                                                                                   [31;1H~                                                                                                                                                   [32;1H~                                                                                                                                                   [33;1H~                                                                                                                                                   [34;1H~                                                                                                                                                   [m[35;131H2,1[11CAll[2;1H[?25h[?25l[35;121H^[[2;1H[35;123H[[2;1H[35;124H>[2;1H[35;125H0[2;1H[35;126H;[2;1H[35;127H1[2;1H[35;128H0[2;1H[35;129H;[2;1H[35;121H         [2;1H[?12$p[?25h[?25l[35;121H^[[2;1H[35;123H[[2;1H[35;124H?[2;1H[35;125H1[2;1H[35;126H2[2;1H[35;127H;[2;1H[35;128H2[2;1H[35;129H$[2;1H[35;121H         [2;1H[?25h[?25l[35;121H~@k[2;1H[35;121H   [2;1H[35;1H[1m-- INSERT --[m[35;13H[K[35;131H2,1[11CAll[2;1H[?25h[?25l[35;4H[1mREPLACE --[m[35;131H[K[35;131H2,1[11CAll[2;1H[?25h[?25l[35;133H2[2;2H[?25h[?25l[35;133H3[2;3H[?25h[?25l[3;1H[K[35;131H3,1[3;1H[?25h[?25lo[35;133H2[3;2H[?25h[?25lk[35;133H3[3;3H[?25h[35;1H[K[3;2H[?25l[35;121H^[[3;2H[35;121H  [3;3H[35;131H3,2[11CAll[3;2H[?25h[?25l[35;121H:[3;2H[35;121H[K[35;1H:[?25hwq[?25l[?2004l[>4;m"contributor.md" 3L, 34B written[23;2t[23;1t
+[?1004l[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git diff
+[?2004l[?1h=[1mdiff --git a/contributor.md b/contributor.md[m[m
+[1mindex 8c7c9be..4325fff 100644[m[m
+[1m--- a/contributor.md[m[m
+[1m+++ b/contributor.md[m[m
+[36m@@ -1,2 +1,3 @@[m[m
+ Hello good morning everyone[m[m
+[31m-[m[m
+[32m+[m[32mhi[m[m
+[32m+[m[32mok[m[m
+[K[?1l>[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ vim contributor.md
+[?2004l[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;35r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[35;1H"contributor.md" 3L, 34B[2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[1;1HHello good morning everyone
+hi[2;3H[K[3;1Hok[3;3H[K[4;1H[94m~                                                                                                                                                   [5;1H~                                                                                                                                                   [6;1H~                                                                                                                                                   [7;1H~                                                                                                                                                   [8;1H~                                                                                                                                                   [9;1H~                                                                                                                                                   [10;1H~                                                                                                                                                   [11;1H~                                                                                                                                                   [12;1H~                                                                                                                                                   [13;1H~                                                                                                                                                   [14;1H~                                                                                                                                                   [15;1H~                                                                                                                                                   [16;1H~                                                                                                                                                   [17;1H~                                                                                                                                                   [18;1H~                                                                                                                                                   [19;1H~                                                                                                                                                   [20;1H~                                                                                                                                                   [21;1H~                                                                                                                                                   [22;1H~                                                                                                                                                   [23;1H~                                                                                                                                                   [24;1H~                                                                                                                                                   [25;1H~                                                                                                                                                   [26;1H~                                                                                                                                                   [27;1H~                                                                                                                                                   [28;1H~                                                                                                                                                   [29;1H~                                                                                                                                                   [30;1H~                                                                                                                                                   [31;1H~                                                                                                                                                   [32;1H~                                                                                                                                                   [33;1H~                                                                                                                                                   [34;1H~                                                                                                                                                   [m[35;131H3,2[11CAll[3;2H[?25h[?12$p[?25l[35;121H^[[3;2H[35;123H[[3;2H[35;124H?[3;2H[35;125H1[3;2H[35;126H2[3;2H[35;127H;[3;2H[35;128H2[3;2H[35;129H$[3;2H[35;121H         [3;2H[?25h[?25l[35;121H~@k[3;2H[35;121H   [3;2H[?25h[?25l[35;121H^[[3;2H[35;121H  [3;2H[35;121H^[[3;2H[35;121H  [3;2H[?25h[?25l[35;121H:[3;2H[35;1H[K[35;1H:[?25hwq[?25l[?2004l[>4;m"contributor.md" 3L, 34B written[23;2t[23;1t
+[?1004l[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git status -s
+[?2004l[32mA[m  README
+[32mA[m[31mM[m contributor.md
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git add v[Kcontributi[Kor.add[K[K[Kmd
+[?2004l[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git commmit[Kt -a -m "seconf[Kd'
+[?2004l[?2004h> ^C[?2004l[?2004h[?2004l
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git commmit -a -m "second'[K"
+[?2004lgit: 'commmit' is not a git command. See 'git --help'.
+
+The most similar command is
+	commit
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ vim contriv[Kbutor.md
+[?2004l[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;35r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[35;1H"contributor.md" 3L, 34B[2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[1;1HHello good morning everyone
+hi[2;3H[K[3;1Hok[3;3H[K[4;1H[94m~                                                                                                                                                   [5;1H~                                                                                                                                                   [6;1H~                                                                                                                                                   [7;1H~                                                                                                                                                   [8;1H~                                                                                                                                                   [9;1H~                                                                                                                                                   [10;1H~                                                                                                                                                   [11;1H~                                                                                                                                                   [12;1H~                                                                                                                                                   [13;1H~                                                                                                                                                   [14;1H~                                                                                                                                                   [15;1H~                                                                                                                                                   [16;1H~                                                                                                                                                   [17;1H~                                                                                                                                                   [18;1H~                                                                                                                                                   [19;1H~                                                                                                                                                   [20;1H~                                                                                                                                                   [21;1H~                                                                                                                                                   [22;1H~                                                                                                                                                   [23;1H~                                                                                                                                                   [24;1H~                                                                                                                                                   [25;1H~                                                                                                                                                   [26;1H~                                                                                                                                                   [27;1H~                                                                                                                                                   [28;1H~                                                                                                                                                   [29;1H~                                                                                                                                                   [30;1H~                                                                                                                                                   [31;1H~                                                                                                                                                   [32;1H~                                                                                                                                                   [33;1H~                                                                                                                                                   [34;1H~                                                                                                                                                   [m[35;131H3,2[11CAll[3;2H[?25h[?25l[35;121H^[[3;2H[35;123H[[3;2H[35;124H>[3;2H[35;125H0[3;2H[35;126H;[3;2H[35;127H1[3;2H[35;128H0[3;2H[35;129H;[3;2H[35;121H         [3;2H[?12$p[?25h[?25l[35;121H^[[3;2H[35;123H[[3;2H[35;124H?[3;2H[35;125H1[3;2H[35;126H2[3;2H[35;127H;[3;2H[35;128H2[3;2H[35;129H$[3;2H[35;121H         [3;2H[?25h[?25l[35;121H~@k[3;2H[35;121H   [3;2H[35;1H[1m-- INSERT --[m[35;13H[K[35;131H3,2[11CAll[3;2H[?25h[?25l[35;133H3[3;3H[?25h[?25l[4;1H[K[35;131H4,1[4;1H[?25h[?25lh[35;133H2[4;2H[?25h[?25le[35;133H3[4;3H[?25h[?25ll[35;133H4[4;4H[?25h[?25ll[35;133H5[4;5H[?25h[?25lo[35;133H6[4;6H[?25h[35;1H[K[4;5H[?25l[35;121H^[[4;5H[35;121H  [4;6H[35;131H4,5[11CAll[4;5H[?25h[?25l[35;121H:[4;5H[35;121H[K[35;1H:[?25hwq[?25l[?2004l[>4;m"contributor.md" 4L, 40B written[23;2t[23;1t
+[?1004l[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git commmit -m "direct"
+[?2004lgit: 'commmit' is not a git command. See 'git --help'.
+
+The most similar command is
+	commit
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ rm file.txt
+[?2004l[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git sts[Katus
+[?2004lOn branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   README[m
+	[32mnew file:   contributor.md[m
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   contributor.md[m
+	[31mdeleted:    file.txt[m
+
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git rm file.txt
+[?2004lrm 'file.txt'
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git status
+[?2004lOn branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   README[m
+	[32mnew file:   contributor.md[m
+	[32mdeleted:    file.txt[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   contributor.md[m
+
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ nano file1[K2.txt
+[?2004l[?2004h[?1049h[22;0;0t[1;35r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[33;69H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 6.2                                                          file2.txt                                                                   [1;147H(B[m[34d(B[0;7m^G(B[m Help[34;17H(B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut[34;65H(B[0;7m^T(B[m Execute[81G(B[0;7m^C(B[m Location     (B[0;7mM-U(B[m Undo[34;113H(B[0;7mM-A(B[m Set Mark    (B[0;7mM-](B[m To Bracket[35d(B[0;7m^X(B[m Exit[35;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste[35;65H(B[0;7m^J(B[m Justify[81G(B[0;7m^/(B[m Go To Line   (B[0;7mM-E(B[m Redo[35;113H(B[0;7mM-6(B[m Copy[35;129H(B[0;7m^Q(B[m Where Was[2d[?12l[?25h[?25l[1;83H(B[0;7m*[147G(B[m[?12l[?25h[2da[?25l[?12l[?25hg[?25l[?12l[?25ha[?25l[?12l[?25hj[?25l[?12l[?25hh[?25l[?12l[?25hg[?25l[?12l[?25hg[?25l[?12l[?25hs[?25l[?12l[?25hh[?25l[?12l[?25hcf[?25l[33;68H(B[0;7m[ Writing... ](B[m[1;83H(B[0;7m [147G(B[m[33;67H(B[0;7m[ Wrote 1 line ](B[m[?12l[?25h[2;12H[?25l[33d[J[35d[?12l[?25h[35;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git mv file2.txt FILE2
+[?2004lfatal: not under version control, source=file2.txt, destination=FILE2
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git mv file2.txt FILE2[1@-[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lunknown option: -mv
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git add file2.txt
+[?2004l[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git add file2.txt-mv file2.txt FILE2[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8Pnano file2.txt[4Pgit statusrm file.txt[5Pstatusrm file.txtgit commmit -m "direct"[5Pvim contributor.mdgit commmit -m "direct"[C[1P"[1P"[1P"[1P"[1P"[1P"f"i"l"e"2"
+[?2004lgit: 'commmit' is not a git command. See 'git --help'.
+
+The most similar command is
+	commit
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git mv file2.txt file[K[K[K[Kfileee.txt
+[?2004l[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ add f[K[K[K[K[Knano fileee.txt
+[?2004l[?2004h[?1049h[22;0;0t[1;35r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[33;68H(B[0;7m[ Reading... ](B[m[33;67H(B[0;7m[ Read 1 line ](B[m[H(B[0;7m  GNU nano 6.2                                                         fileee.txt                                                                   [1;147H(B[m[34d(B[0;7m^G(B[m Help[34;17H(B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut[34;65H(B[0;7m^T(B[m Execute[81G(B[0;7m^C(B[m Location     (B[0;7mM-U(B[m Undo[34;113H(B[0;7mM-A(B[m Set Mark    (B[0;7mM-](B[m To Bracket[35d(B[0;7m^X(B[m Exit[35;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste[35;65H(B[0;7m^J(B[m Justify[81G(B[0;7m^/(B[m Go To Line   (B[0;7mM-E(B[m Redo[35;113H(B[0;7mM-6(B[m Copy[35;129H(B[0;7m^Q(B[m Where Was[2dagajhggshcf[?12l[?25h[?25l[33;67H (B[0;7m[ Writing... ](B[m[1;147H[33;67H(B[0;7m[ Wrote 1 line ](B[m[?12l[?25h[2d[?25l[33d[J[35d[?12l[?25h[35;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ gitvst[K[K[K status
+[?2004lOn branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   README[m
+	[32mnew file:   contributor.md[m
+	[32mdeleted:    file.txt[m
+	[32mnew file:   fileee.txt[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   contributor.md[m
+
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ fit [K[K[K[Kgit add fileee.txt
+[?2004l[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git commit -m "final"
+[?2004l[main 357ed67] final
+ 4 files changed, 5 insertions(+), 1 deletion(-)
+ create mode 100644 README
+ create mode 100644 contributor.md
+ delete mode 100644 file.txt
+ create mode 100644 fileee.txt
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git stats[Kus
+[?2004lOn branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   contributor.md[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git log
+[?2004l[?1h=[33mcommit 357ed672422063af088415be70a53d5eaeee538d[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m[m
+Author: vyeshma.vanka <vyeshma.vanka@tigeranalytics.com>[m
+Date:   Wed Oct 11 23:43:57 2023 +0530[m
+[m
+    final[m
+[m
+[33mcommit 20ad66902092b780242331606c82684a5aff1286[m[m
+Author: vyeshma.vanka <vyeshma.vanka@tigeranalytics.com>[m
+Date:   Wed Oct 11 23:33:07 2023 +0530[m
+[m
+    First[m
+[m
+[33mcommit 1bd7d17ea7ab52d5df75477ad5c508a47e72e570[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m[m
+Author: Vyeshmavanka77 <vyeshma.vanka@tigeranalytics.com>[m
+Date:   Wed Oct 11 23:58:31 2023 +0530[m
+[m
+    Initial commit[m
+[K[?1l>[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git log -p -2
+[?2004l[?1h=[33mcommit 357ed672422063af088415be70a53d5eaeee538d[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m[m
+Author: vyeshma.vanka <vyeshma.vanka@tigeranalytics.com>[m
+Date:   Wed Oct 11 23:43:57 2023 +0530[m
+[m
+    final[m
+[m
+[1mdiff --git a/README b/README[m[m
+[1mnew file mode 100644[m[m
+[1mindex 0000000..25189a0[m[m
+[1m--- /dev/null[m[m
+[1m+++ b/README[m[m
+[36m@@ -0,0 +1 @@[m[m
+[32m+[m[32mmyproject[m[m
+[1mdiff --git a/contributor.md b/contributor.md[m[m
+[1mnew file mode 100644[m[m
+[1mindex 0000000..4325fff[m[m
+[1m--- /dev/null[m[m
+[1m+++ b/contributor.md[m[m
+[36m@@ -0,0 +1,3 @@[m[m
+[32m+[m[32mHello good morning everyone[m[m
+[32m+[m[32mhi[m[m
+[32m+[m[32mok[m[m
+[1mdiff --git a/file.txt b/file.txt[m[m
+[1mdeleted file mode 100644[m[m
+[1mindex 45cfddb..0000000[m[m
+[1m--- a/file.txt[m[m
+[1m+++ /dev/null[m[m
+[36m@@ -1 +0,0 @@[m[m
+[31m-"hello i am vyeshma"[m[m
+[1mdiff --git a/fileee.txt b/fileee.txt[m[m
+[1mnew file mode 100644[m[m
+[1mindex 0000000..6cedecc[m[m
+[1m--- /dev/null[m[m
+[1m+++ b/fileee.txt[m[m
+:[K[K[?1l>[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git log --stat
+[?2004l[?1h=[33mcommit 357ed672422063af088415be70a53d5eaeee538d[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m[m
+Author: vyeshma.vanka <vyeshma.vanka@tigeranalytics.com>[m
+Date:   Wed Oct 11 23:43:57 2023 +0530[m
+[m
+    final[m
+[m
+ README         | 1 [32m+[m[m
+ contributor.md | 3 [32m+++[m[m
+ file.txt       | 1 [31m-[m[m
+ fileee.txt     | 1 [32m+[m[m
+ 4 files changed, 5 insertions(+), 1 deletion(-)[m
+[m
+[33mcommit 20ad66902092b780242331606c82684a5aff1286[m[m
+Author: vyeshma.vanka <vyeshma.vanka@tigeranalytics.com>[m
+Date:   Wed Oct 11 23:33:07 2023 +0530[m
+[m
+    First[m
+[m
+ file.txt | 1 [32m+[m[m
+ 1 file changed, 1 insertion(+)[m
+[m
+[33mcommit 1bd7d17ea7ab52d5df75477ad5c508a47e72e570[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m[m
+Author: Vyeshmavanka77 <vyeshma.vanka@tigeranalytics.com>[m
+Date:   Wed Oct 11 23:58:31 2023 +0530[m
+[m
+    Initial commit[m
+[m
+ README.md | 1 [32m+[m[m
+ 1 file changed, 1 insertion(+)[m
+[K[?1l>[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ gir log --prettu[Ky-on[K[K[K=oneline
+[?2004lCommand 'gir' not found, did you mean:
+  command 'gio' from deb libglib2.0-bin (2.72.4-0ubuntu2)
+  command 'git' from deb git (1:2.34.1-1ubuntu1.9)
+  command 'xir' from deb libxir-utils (1.4-2ubuntu1)
+  command 'gpr' from deb gpr (0.15deb-2build1)
+  command 'gie' from deb proj-bin (8.2.1-1)
+  command 'gip' from deb gip (1.7.0-1-5)
+  command 'gid' from deb id-utils (4.6.28-20200521ss15dab)
+  command 'dir' from deb coreutils (8.32-4.1ubuntu1)
+Try: sudo apt install <deb name>
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git commit --ammend
+[?2004lerror: unknown option `ammend'
+usage: git commit [<options>] [--] <pathspec>...
+
+    -q, --quiet           suppress summary after successful commit
+    -v, --verbose         show diff in commit message template
+
+Commit message options
+    -F, --file <file>     read message from file
+    --author <author>     override author for commit
+    --date <date>         override date for commit
+    -m, --message <message>
+                          commit message
+    -c, --reedit-message <commit>
+                          reuse and edit message from specified commit
+    -C, --reuse-message <commit>
+                          reuse message from specified commit
+    --fixup [(amend|reword):]commit
+                          use autosquash formatted message to fixup or amend/reword specified commit
+    --squash <commit>     use autosquash formatted message to squash specified commit
+    --reset-author        the commit is authored by me now (used with -C/-c/--amend)
+    --trailer <trailer>   add custom trailer(s)
+    -s, --signoff         add a Signed-off-by trailer
+    -t, --template <file>
+                          use specified template file
+    -e, --edit            force edit of commit
+    --cleanup <mode>      how to strip spaces and #comments from message
+    --status              include status in commit message template
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+Commit contents options
+    -a, --all             commit all changed files
+    -i, --include         add specified files to index for commit
+    --interactive         interactively add files
+    -p, --patch           interactively add changes
+    -o, --only            commit only specified files
+    -n, --no-verify       bypass pre-commit and commit-msg hooks
+    --dry-run             show what would be committed
+    --short               show status concisely
+    --branch              show branch information
+    --ahead-behind        compute full ahead/behind values
+    --porcelain           machine-readable output
+    --long                show status in long format (default)
+    -z, --null            terminate entries with NUL
+    --amend               amend previous commit
+    --no-post-rewrite     bypass post-rewrite hook
+    -u, --untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no. (Default: all)
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git log -S hi
+[?2004l[?1h=[33mcommit 357ed672422063af088415be70a53d5eaeee538d[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m[m
+Author: vyeshma.vanka <vyeshma.vanka@tigeranalytics.com>[m
+Date:   Wed Oct 11 23:43:57 2023 +0530[m
+[m
+    final[m
+[K[?1l>[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ cat file.txt
+[?2004lcat: file.txt: No such file or directory
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ cT[KAT[K[Kat fileee.txt
+[?2004lagajhggshcf
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git add *
+[?2004l[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git status
+[?2004lOn branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mmodified:   contributor.md[m
+
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ nano new.txt
+[?2004l[?2004h[?1049h[22;0;0t[1;35r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[33;69H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 6.2                                                           new.txt                                                                    [1;147H(B[m[34d(B[0;7m^G(B[m Help[34;17H(B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut[34;65H(B[0;7m^T(B[m Execute[81G(B[0;7m^C(B[m Location     (B[0;7mM-U(B[m Undo[34;113H(B[0;7mM-A(B[m Set Mark    (B[0;7mM-](B[m To Bracket[35d(B[0;7m^X(B[m Exit[35;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste[35;65H(B[0;7m^J(B[m Justify[81G(B[0;7m^/(B[m Go To Line   (B[0;7mM-E(B[m Redo[35;113H(B[0;7mM-6(B[m Copy[35;129H(B[0;7m^Q(B[m Where Was[2d[?12l[?25h[?25l[1;82H(B[0;7m*[147G(B[m[?12l[?25h[2dd[?25l[?12l[?25hu[?25l[?12l[?25hf[?25l[?12l[?25hg[?25l[?12l[?25hk[?25l[?12l[?25hd[?25l[?12l[?25hj[?25l[?12l[?25hf[?25l[?12l[?25hd[?25l[?12l[?25hi[?25l[?12l[?25hj[?25l[?12l[?25hk[?25l[33;68H(B[0;7m[ Writing... ](B[m[1;82H(B[0;7m [147G(B[m[33;67H(B[0;7m[ Wrote 1 line ](B[m[?12l[?25h[2;13H[?25l[33;62H(B[0;1m[37m[41m[ To suspend, type ^T^Z ][39;49m(B[m[?12l[?25h[2;13H[?25l[33;67H[1K (B[0;7m[ Writing... ](B[m[K[1;147H[33;67H(B[0;7m[ Wrote 1 line ](B[m[?12l[?25h[2;13H[?25l[33d[J[35d[?12l[?25h[35;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git status'[K
+[?2004lOn branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mmodified:   contributor.md[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mnew.txt[m
+
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ add [K[K[K[Knano new1.txt
+[?2004l[?2004h[?1049h[22;0;0t[1;35r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[33;69H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 6.2                                                          new1.txt                                                                    [1;147H(B[m[34d(B[0;7m^G(B[m Help[34;17H(B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut[34;65H(B[0;7m^T(B[m Execute[81G(B[0;7m^C(B[m Location     (B[0;7mM-U(B[m Undo[34;113H(B[0;7mM-A(B[m Set Mark    (B[0;7mM-](B[m To Bracket[35d(B[0;7m^X(B[m Exit[35;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste[35;65H(B[0;7m^J(B[m Justify[81G(B[0;7m^/(B[m Go To Line   (B[0;7mM-E(B[m Redo[35;113H(B[0;7mM-6(B[m Copy[35;129H(B[0;7m^Q(B[m Where Was[2d[?12l[?25h[?25l[1;82H(B[0;7m*[147G(B[m[?12l[?25h[2dh[?25l[?12l[?25hg[?25l[?12l[?25hf[?25l[?12l[?25hd[?25l[?12l[?25hs[?25l[?12l[?25hu[?25l[?12l[?25hf[?25l[?12l[?25hi[?25l[?12l[?25hj[?25l[?12l[?25hf[?25l[?12l[?25hl[?25l[?12l[?25hj[?25l[33;68H(B[0;7m[ Writing... ](B[m[1;82H(B[0;7m [147G(B[m[33;67H(B[0;7m[ Wrote 1 line ](B[m[?12l[?25h[2;13H[?25l[33d[J[35d[?12l[?25h[35;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git status'[K
+[?2004lOn branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mmodified:   contributor.md[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mnew.txt[m
+	[31mnew1.txt[m
+
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git add *
+[?2004l[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git status
+[?2004l'On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mmodified:   contributor.md[m
+	[32mnew file:   new.txt[m
+	[32mnew file:   new1.txt[m
+
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ '=[K[Kgit reset new1.txt
+[?2004l[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git status'[K
+[?2004lOn branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mmodified:   contributor.md[m
+	[32mnew file:   new.txt[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mnew1.txt[m
+
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ vim new.txt
+[?2004l[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;35r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[35;1H"new.txt" 1L, 13B[2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[1;1Hdufgkdjfdijk
+[94m~                                                                                                                                                   [3;1H~                                                                                                                                                   [4;1H~                                                                                                                                                   [5;1H~                                                                                                                                                   [6;1H~                                                                                                                                                   [7;1H~                                                                                                                                                   [8;1H~                                                                                                                                                   [9;1H~                                                                                                                                                   [10;1H~                                                                                                                                                   [11;1H~                                                                                                                                                   [12;1H~                                                                                                                                                   [13;1H~                                                                                                                                                   [14;1H~                                                                                                                                                   [15;1H~                                                                                                                                                   [16;1H~                                                                                                                                                   [17;1H~                                                                                                                                                   [18;1H~                                                                                                                                                   [19;1H~                                                                                                                                                   [20;1H~                                                                                                                                                   [21;1H~                                                                                                                                                   [22;1H~                                                                                                                                                   [23;1H~                                                                                                                                                   [24;1H~                                                                                                                                                   [25;1H~                                                                                                                                                   [26;1H~                                                                                                                                                   [27;1H~                                                                                                                                                   [28;1H~                                                                                                                                                   [29;1H~                                                                                                                                                   [30;1H~                                                                                                                                                   [31;1H~                                                                                                                                                   [32;1H~                                                                                                                                                   [33;1H~                                                                                                                                                   [34;1H~                                                                                                                                                   [m[35;131H1,1[11CAll[1;1H[?25h[?25l[35;121H^[[1;1H[35;123H[[1;1H[35;124H>[1;1H[35;125H0[1;1H[35;126H;[1;1H[35;127H1[1;1H[35;128H0[1;1H[35;129H;[1;1H[35;121H         [1;1H[?12$p[?25h[?25l[35;121H^[[1;1H[35;123H[[1;1H[35;124H?[1;1H[35;125H1[1;1H[35;126H2[1;1H[35;127H;[1;1H[35;128H2[1;1H[35;129H$[1;1H[35;121H         [1;1H[?25h[?25l[35;121H~@k[1;1H[35;121H   [1;1H[35;1H[1m-- INSERT --[m[35;13H[K[35;131H1,1[11CAll[1;1H[?25h[?25lhdufgkdjfdijk[35;133H2[1;2H[?25h[?25lgdufgkdjfdijk[35;133H3[1;3H[?25h[?25lddufgkdjfdijk[35;133H4[1;4H[?25h[?25lsdufgkdjfdijk[35;133H5[1;5H[?25h[?25lhdufgkdjfdijk[35;133H6[1;6H[?25h[?25lfdufgkdjfdijk[35;133H7[1;7H[?25h[?25lddufgkdjfdijk[35;133H8[1;8H[?25h[?25lhdufgkdjfdijk[35;133H9[1;9H[?25h[35;1H[K[1;8H[?25l[35;121H^[[1;8H[35;121H  [1;9H[35;131H1,8[11CAll[1;8H[?25h[?25l[35;121H:[1;8H[35;121H[K[35;1H:[?25hwq[?25l[?2004l[>4;m"new.txt" 1L, 21B written[23;2t[23;1t
+[?1004l[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git checkout new[K[K[K--new.txt
+[?2004lerror: unknown option `new.txt'
+usage: git checkout [<options>] <branch>
+   or: git checkout [<options>] [<branch>] -- <file>...
+
+    -b <branch>           create and checkout a new branch
+    -B <branch>           create/reset and checkout a branch
+    -l                    create reflog for new branch
+    --guess               second guess 'git checkout <no-such-branch>' (default)
+    --overlay             use overlay mode (default)
+    -q, --quiet           suppress progress reporting
+    --recurse-submodules[=<checkout>]
+                          control recursive updating of submodules
+    --progress            force progress reporting
+    -m, --merge           perform a 3-way merge with the new branch
+    --conflict <style>    conflict style (merge or diff3)
+    -d, --detach          detach HEAD at named commit
+    -t, --track           set upstream info for new branch
+    -f, --force           force checkout (throw away local modifications)
+    --orphan <new-branch>
+                          new unparented branch
+    --overwrite-ignore    update ignored files (default)
+    --ignore-other-worktrees
+                          do not check if another worktree is holding the given ref
+    -2, --ours            checkout our version for unmerged files
+    -3, --theirs          checkout their version for unmerged files
+    -p, --patch           select hunks interactively
+    --ignore-skip-worktree-bits
+                          do not limit pathspecs to sparse entries only
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git checkout --new.txt
+[?2004lerror: unknown option `new.txt'
+usage: git checkout [<options>] <branch>
+   or: git checkout [<options>] [<branch>] -- <file>...
+
+    -b <branch>           create and checkout a new branch
+    -B <branch>           create/reset and checkout a branch
+    -l                    create reflog for new branch
+    --guess               second guess 'git checkout <no-such-branch>' (default)
+    --overlay             use overlay mode (default)
+    -q, --quiet           suppress progress reporting
+    --recurse-submodules[=<checkout>]
+                          control recursive updating of submodules
+    --progress            force progress reporting
+    -m, --merge           perform a 3-way merge with the new branch
+    --conflict <style>    conflict style (merge or diff3)
+    -d, --detach          detach HEAD at named commit
+    -t, --track           set upstream info for new branch
+    -f, --force           force checkout (throw away local modifications)
+    --orphan <new-branch>
+                          new unparented branch
+    --overwrite-ignore    update ignored files (default)
+    --ignore-other-worktrees
+                          do not check if another worktree is holding the given ref
+    -2, --ours            checkout our version for unmerged files
+    -3, --theirs          checkout their version for unmerged files
+    -p, --patch           select hunks interactively
+    --ignore-skip-worktree-bits
+                          do not limit pathspecs to sparse entries only
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ get status
+[?2004lCommand 'get' not found, but there are 18 similar ones.
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git status
+[?2004lOn branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mmodified:   contributor.md[m
+	[32mnew file:   new.txt[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   new.txt[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mnew1.txt[m
+
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git remote
+[?2004lorigin
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ gitn [K[K remote -v
+[?2004lorigin	git@github.com:Vyeshmavanka77/Assignment1.0.git (fetch)
+origin	git@github.com:Vyeshmavanka77/Assignment1.0.git (push)
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git remote add pf[Kb https;[K://github.com/paulboone/tig[Kcgit
+[?2004l[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git remove[K[Kte -v
+[?2004lorigin	git@github.com:Vyeshmavanka77/Assignment1.0.git (fetch)
+origin	git@github.com:Vyeshmavanka77/Assignment1.0.git (push)
+pb	https://github.com/paulboone/ticgit (fetch)
+pb	https://github.com/paulboone/ticgit (push)
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git fetch
+[?2004l
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ 
+[?2004l[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git fetch pb
+[?2004lremote: Enumerating objects: 634, done.[K
+Receiving objects:   0% (1/634)Receiving objects:   1% (7/634)Receiving objects:   2% (13/634)Receiving objects:   3% (20/634)Receiving objects:   4% (26/634)Receiving objects:   5% (32/634)Receiving objects:   6% (39/634)Receiving objects:   7% (45/634)Receiving objects:   8% (51/634)Receiving objects:   9% (58/634)Receiving objects:  10% (64/634)Receiving objects:  11% (70/634)Receiving objects:  12% (77/634)Receiving objects:  13% (83/634)Receiving objects:  14% (89/634)Receiving objects:  15% (96/634)Receiving objects:  16% (102/634)Receiving objects:  17% (108/634)Receiving objects:  18% (115/634)Receiving objects:  19% (121/634)Receiving objects:  20% (127/634)Receiving objects:  21% (134/634)Receiving objects:  22% (140/634)Receiving objects:  23% (146/634)Receiving objects:  24% (153/634)Receiving objects:  25% (159/634)Receiving objects:  26% (165/634), 44.00 KiB | 75.00 KiB/sReceiving objects:  27% (172/634), 44.00 KiB | 75.00 KiB/sReceiving objects:  28% (178/634), 44.00 KiB | 75.00 KiB/sReceiving objects:  29% (184/634), 44.00 KiB | 75.00 KiB/sReceiving objects:  30% (191/634), 44.00 KiB | 75.00 KiB/sReceiving objects:  31% (197/634), 44.00 KiB | 75.00 KiB/sReceiving objects:  32% (203/634), 44.00 KiB | 75.00 KiB/sReceiving objects:  33% (210/634), 44.00 KiB | 75.00 KiB/sReceiving objects:  34% (216/634), 44.00 KiB | 75.00 KiB/sReceiving objects:  35% (222/634), 44.00 KiB | 75.00 KiB/sReceiving objects:  36% (229/634), 44.00 KiB | 75.00 KiB/sReceiving objects:  37% (235/634), 44.00 KiB | 75.00 KiB/sReceiving objects:  38% (241/634), 44.00 KiB | 75.00 KiB/sReceiving objects:  39% (248/634), 44.00 KiB | 75.00 KiB/sReceiving objects:  40% (254/634), 44.00 KiB | 75.00 KiB/sReceiving objects:  41% (260/634), 44.00 KiB | 75.00 KiB/sReceiving objects:  42% (267/634), 44.00 KiB | 75.00 KiB/sReceiving objects:  43% (273/634), 44.00 KiB | 75.00 KiB/sReceiving objects:  44% (279/634), 44.00 KiB | 75.00 KiB/sReceiving objects:  45% (286/634), 44.00 KiB | 75.00 KiB/sReceiving objects:  46% (292/634), 44.00 KiB | 75.00 KiB/sReceiving objects:  47% (298/634), 44.00 KiB | 75.00 KiB/sReceiving objects:  48% (305/634), 44.00 KiB | 75.00 KiB/sReceiving objects:  49% (311/634), 44.00 KiB | 75.00 KiB/sReceiving objects:  50% (317/634), 44.00 KiB | 75.00 KiB/sReceiving objects:  51% (324/634), 44.00 KiB | 75.00 KiB/sReceiving objects:  52% (330/634), 44.00 KiB | 75.00 KiB/sReceiving objects:  53% (337/634), 44.00 KiB | 75.00 KiB/sReceiving objects:  54% (343/634), 44.00 KiB | 75.00 KiB/sReceiving objects:  55% (349/634), 44.00 KiB | 75.00 KiB/sReceiving objects:  56% (356/634), 44.00 KiB | 75.00 KiB/sReceiving objects:  57% (362/634), 44.00 KiB | 75.00 KiB/sReceiving objects:  58% (368/634), 44.00 KiB | 75.00 KiB/sReceiving objects:  59% (375/634), 44.00 KiB | 75.00 KiB/sReceiving objects:  60% (381/634), 44.00 KiB | 75.00 KiB/sReceiving objects:  61% (387/634), 44.00 KiB | 75.00 KiB/sReceiving objects:  62% (394/634), 44.00 KiB | 75.00 KiB/sReceiving objects:  63% (400/634), 44.00 KiB | 75.00 KiB/sReceiving objects:  64% (406/634), 44.00 KiB | 75.00 KiB/sReceiving objects:  65% (413/634), 44.00 KiB | 75.00 KiB/sReceiving objects:  66% (419/634), 44.00 KiB | 75.00 KiB/sReceiving objects:  67% (425/634), 44.00 KiB | 75.00 KiB/sReceiving objects:  68% (432/634), 44.00 KiB | 75.00 KiB/sReceiving objects:  69% (438/634), 44.00 KiB | 75.00 KiB/sReceiving objects:  70% (444/634), 44.00 KiB | 75.00 KiB/sReceiving objects:  71% (451/634), 44.00 KiB | 75.00 KiB/sReceiving objects:  72% (457/634), 44.00 KiB | 75.00 KiB/sReceiving objects:  73% (463/634), 44.00 KiB | 75.00 KiB/sReceiving objects:  74% (470/634), 44.00 KiB | 75.00 KiB/sReceiving objects:  75% (476/634), 44.00 KiB | 75.00 KiB/sReceiving objects:  76% (482/634), 44.00 KiB | 75.00 KiB/sReceiving objects:  77% (489/634), 44.00 KiB | 75.00 KiB/sReceiving objects:  78% (495/634), 44.00 KiB | 75.00 KiB/sReceiving objects:  79% (501/634), 44.00 KiB | 75.00 KiB/sReceiving objects:  80% (508/634), 44.00 KiB | 75.00 KiB/sReceiving objects:  81% (514/634), 44.00 KiB | 75.00 KiB/sReceiving objects:  82% (520/634), 44.00 KiB | 75.00 KiB/sReceiving objects:  82% (520/634), 76.00 KiB | 66.00 KiB/sReceiving objects:  83% (527/634), 76.00 KiB | 66.00 KiB/sReceiving objects:  84% (533/634), 76.00 KiB | 66.00 KiB/sReceiving objects:  85% (539/634), 76.00 KiB | 66.00 KiB/sReceiving objects:  86% (546/634), 76.00 KiB | 66.00 KiB/sReceiving objects:  87% (552/634), 76.00 KiB | 66.00 KiB/sReceiving objects:  88% (558/634), 76.00 KiB | 66.00 KiB/sReceiving objects:  89% (565/634), 76.00 KiB | 66.00 KiB/sReceiving objects:  90% (571/634), 76.00 KiB | 66.00 KiB/sReceiving objects:  91% (577/634), 76.00 KiB | 66.00 KiB/sremote: Total 634 (delta 0), reused 0 (delta 0), pack-reused 634[K
+Receiving objects:  92% (584/634), 76.00 KiB | 66.00 KiB/sReceiving objects:  93% (590/634), 76.00 KiB | 66.00 KiB/sReceiving objects:  94% (596/634), 76.00 KiB | 66.00 KiB/sReceiving objects:  95% (603/634), 76.00 KiB | 66.00 KiB/sReceiving objects:  96% (609/634), 76.00 KiB | 66.00 KiB/sReceiving objects:  97% (615/634), 76.00 KiB | 66.00 KiB/sReceiving objects:  98% (622/634), 76.00 KiB | 66.00 KiB/sReceiving objects:  99% (628/634), 76.00 KiB | 66.00 KiB/sReceiving objects: 100% (634/634), 76.00 KiB | 66.00 KiB/sReceiving objects: 100% (634/634), 88.93 KiB | 75.00 KiB/s, done.
+Resolving deltas:   0% (0/261)Resolving deltas:   1% (3/261)Resolving deltas:   2% (6/261)Resolving deltas:   3% (8/261)Resolving deltas:   4% (11/261)Resolving deltas:   5% (14/261)Resolving deltas:   6% (16/261)Resolving deltas:   7% (19/261)Resolving deltas:   8% (21/261)Resolving deltas:   9% (24/261)Resolving deltas:  10% (27/261)Resolving deltas:  11% (29/261)Resolving deltas:  12% (32/261)Resolving deltas:  13% (34/261)Resolving deltas:  14% (37/261)Resolving deltas:  15% (40/261)Resolving deltas:  16% (42/261)Resolving deltas:  17% (45/261)Resolving deltas:  18% (47/261)Resolving deltas:  19% (50/261)Resolving deltas:  20% (53/261)Resolving deltas:  21% (55/261)Resolving deltas:  22% (58/261)Resolving deltas:  23% (61/261)Resolving deltas:  24% (64/261)Resolving deltas:  25% (66/261)Resolving deltas:  26% (68/261)Resolving deltas:  27% (71/261)Resolving deltas:  28% (74/261)Resolving deltas:  29% (77/261)Resolving deltas:  30% (79/261)Resolving deltas:  31% (81/261)Resolving deltas:  32% (84/261)Resolving deltas:  33% (87/261)Resolving deltas:  34% (89/261)Resolving deltas:  35% (92/261)Resolving deltas:  36% (94/261)Resolving deltas:  37% (97/261)Resolving deltas:  38% (100/261)Resolving deltas:  39% (102/261)Resolving deltas:  40% (105/261)Resolving deltas:  41% (108/261)Resolving deltas:  42% (110/261)Resolving deltas:  43% (113/261)Resolving deltas:  44% (115/261)Resolving deltas:  45% (118/261)Resolving deltas:  46% (121/261)Resolving deltas:  47% (123/261)Resolving deltas:  48% (126/261)Resolving deltas:  49% (129/261)Resolving deltas:  50% (131/261)Resolving deltas:  51% (134/261)Resolving deltas:  52% (136/261)Resolving deltas:  53% (139/261)Resolving deltas:  54% (141/261)Resolving deltas:  55% (144/261)Resolving deltas:  56% (147/261)Resolving deltas:  57% (150/261)Resolving deltas:  58% (152/261)Resolving deltas:  59% (154/261)Resolving deltas:  60% (157/261)Resolving deltas:  61% (161/261)Resolving deltas:  62% (162/261)Resolving deltas:  63% (165/261)Resolving deltas:  64% (168/261)Resolving deltas:  65% (170/261)Resolving deltas:  66% (173/261)Resolving deltas:  67% (176/261)Resolving deltas:  68% (178/261)Resolving deltas:  69% (181/261)Resolving deltas:  70% (183/261)Resolving deltas:  71% (186/261)Resolving deltas:  72% (188/261)Resolving deltas:  73% (191/261)Resolving deltas:  74% (194/261)Resolving deltas:  75% (197/261)Resolving deltas:  76% (199/261)Resolving deltas:  77% (201/261)Resolving deltas:  78% (204/261)Resolving deltas:  79% (207/261)Resolving deltas:  80% (209/261)Resolving deltas:  81% (212/261)Resolving deltas:  82% (215/261)Resolving deltas:  83% (218/261)Resolving deltas:  84% (220/261)Resolving deltas:  85% (222/261)Resolving deltas:  86% (225/261)Resolving deltas:  87% (228/261)Resolving deltas:  88% (230/261)Resolving deltas:  89% (233/261)Resolving deltas:  90% (235/261)Resolving deltas:  91% (238/261)Resolving deltas:  92% (241/261)Resolving deltas:  93% (244/261)Resolving deltas:  94% (246/261)Resolving deltas:  95% (248/261)Resolving deltas:  96% (251/261)Resolving deltas:  97% (254/261)Resolving deltas:  98% (256/261)Resolving deltas:  99% (259/261)Resolving deltas: 100% (261/261)Resolving deltas: 100% (261/261), done.
+From https://github.com/paulboone/ticgit
+ * [new branch]      master     -> pb/master
+ * [new branch]      ticgit     -> pb/ticgit
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git fetch origin
+[?2004l[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git push origin main
+[?2004lEnumerating objects: 9, done.
+Counting objects:  11% (1/9)Counting objects:  22% (2/9)Counting objects:  33% (3/9)Counting objects:  44% (4/9)Counting objects:  55% (5/9)Counting objects:  66% (6/9)Counting objects:  77% (7/9)Counting objects:  88% (8/9)Counting objects: 100% (9/9)Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects:  25% (1/4)Compressing objects:  50% (2/4)Compressing objects:  75% (3/4)Compressing objects: 100% (4/4)Compressing objects: 100% (4/4), done.
+Writing objects:  12% (1/8)Writing objects:  25% (2/8)Writing objects:  37% (3/8)Writing objects:  50% (4/8)Writing objects:  62% (5/8)Writing objects:  75% (6/8)Writing objects:  87% (7/8)Writing objects: 100% (8/8)Writing objects: 100% (8/8), 683 bytes | 683.00 KiB/s, done.
+Total 8 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:Vyeshmavanka77/Assignment1.0.git
+   1bd7d17..357ed67  main -> main
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git checkout -b branch1
+[?2004lSwitched to a new branch 'branch1'
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ nano fileee.[K[K[Kee.txt
+[?2004l[?2004h[?1049h[22;0;0t[1;35r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[33;68H(B[0;7m[ Reading... ](B[m[33;67H(B[0;7m[ Read 1 line ](B[m[H(B[0;7m  GNU nano 6.2                                                         fileee.txt                                                                   [1;147H(B[m[34d(B[0;7m^G(B[m Help[34;17H(B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut[34;65H(B[0;7m^T(B[m Execute[81G(B[0;7m^C(B[m Location     (B[0;7mM-U(B[m Undo[34;113H(B[0;7mM-A(B[m Set Mark    (B[0;7mM-](B[m To Bracket[35d(B[0;7m^X(B[m Exit[35;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste[35;65H(B[0;7m^J(B[m Justify[81G(B[0;7m^/(B[m Go To Line   (B[0;7mM-E(B[m Redo[35;113H(B[0;7mM-6(B[m Copy[35;129H(B[0;7m^Q(B[m Where Was[2dagajhggshcf[?12l[?25h[?25l[1;83H(B[0;7m*[147G(B[m[?12l[?25h[2dfagajhggshcff[?25l[?12l[?25hjagajhggshcffj[?25l[?12l[?25hhagajhggshcffjh[?25l[?12l[?25hfagajhggshcf[5G[?25l[?12l[?25hjagajhggshcf[6G[?25l[?12l[?25hhagajhggshcf[7G[?25l[?12l[?25hgagajhggshcf[8G[?25l[?12l[?25hdagajhggshcf[2;9H[?25l[?12l[?25hjagajhggshcf[2;10H[?25l[33;67H (B[0;7m[ Writing... ](B[m[1;83H(B[0;7m [147G(B[m[33;67H(B[0;7m[ Wrote 1 line ](B[m[?12l[?25h[2;10H[?25l[33d[J[35d[?12l[?25h[35;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git status
+[?2004lOn branch branch1
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mmodified:   contributor.md[m
+	[32mnew file:   new.txt[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   fileee.txt[m
+	[31mmodified:   new.txt[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mnew1.txt[m
+
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git add filww[K[K[Ke[Kleee.txt
+[?2004l[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git commit -m "hi"
+[?2004l[branch1 cba7a11] hi
+ 3 files changed, 3 insertions(+), 1 deletion(-)
+ create mode 100644 new.txt
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git oush[K[K[K[Kpush origin main'[K
+[?2004lEverything up-to-date
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ ls
+[?2004lREADME  README.md  contributor.md  fileee.txt  new.txt  new1.txt
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git a[Ktag'[K
+[?2004l[?1h=[K[?1l>[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git tag -l "v1"[C[C[C[C
+[?2004l[?1h=[K[?1l>[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git tag -a v1[K2 -m "taggg"
+[?2004l[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git tag
+[?2004l[?1h=v2[m
+[K[?1l>[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git tag -a v2 -m "taggg"[9Pl "v1"[K[K[K[Kv1
+[?2004l[?1h=[K[?1l>[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git tag -l v1[K
+[?2004l[?1h=v2[m
+[K[?1l>[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git show v2
+[?2004l[?1h=[33mtag v2[m[m
+Tagger: vyeshma.vanka <vyeshma.vanka@tigeranalytics.com>[m
+Date:   Wed Oct 11 23:54:20 2023 +0530[m
+[m
+taggg[m
+[m
+[33mcommit cba7a115cd9b840d3f134963c52a065dffff59b2[m[33m ([m[1;36mHEAD -> [m[1;32mbranch1[m[33m, [m[1;33mtag: v2[m[33m)[m[m
+Author: vyeshma.vanka <vyeshma.vanka@tigeranalytics.com>[m
+Date:   Wed Oct 11 23:53:15 2023 +0530[m
+[m
+    hi[m
+[m
+[1mdiff --git a/contributor.md b/contributor.md[m[m
+[1mindex 4325fff..a135b7d 100644[m[m
+[1m--- a/contributor.md[m[m
+[1m+++ b/contributor.md[m[m
+[36m@@ -1,3 +1,4 @@[m[m
+ Hello good morning everyone[m[m
+ hi[m[m
+ ok[m[m
+[32m+[m[32mhello[m[m
+[1mdiff --git a/fileee.txt b/fileee.txt[m[m
+[1mindex 6cedecc..4b510ca 100644[m[m
+[1m--- a/fileee.txt[m[m
+[1m+++ b/fileee.txt[m[m
+[36m@@ -1 +1 @@[m[m
+[31m-agajhggshcf[m[m
+[32m+[m[32mfjhfjhgdjagajhggshcf[m[m
+[1mdiff --git a/new.txt b/new.txt[m[m
+[1mnew file mode 100644[m[m
+[1mindex 0000000..b2fa4e7[m[m
+[1m--- /dev/null[m[m
+[1m+++ b/new.txt[m[m
+[36m@@ -0,0 +1 @@[m[m
+:[K[K[?1l>[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git tag v3-lw
+[?2004l[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git tag v3-lw[2Pshow v2[4Ptag
+[?2004l[?1h=v2[m
+v3-lw[m
+[K[?1l>[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git tag v3-lw[1P v3-lw[1P v3-lw[1P v3-lw[1Pv3-lw[C v3-lws v3-lwh v3-lwo v3-lww v3-lw[C[C[C[C[C[C
+[?2004l[?1h=[33mcommit cba7a115cd9b840d3f134963c52a065dffff59b2[m[33m ([m[1;36mHEAD -> [m[1;32mbranch1[m[33m, [m[1;33mtag: v3-lw[m[33m, [m[1;33mtag: v2[m[33m)[m[m
+Author: vyeshma.vanka <vyeshma.vanka@tigeranalytics.com>[m
+Date:   Wed Oct 11 23:53:15 2023 +0530[m
+[m
+    hi[m
+[m
+[1mdiff --git a/contributor.md b/contributor.md[m[m
+[1mindex 4325fff..a135b7d 100644[m[m
+[1m--- a/contributor.md[m[m
+[1m+++ b/contributor.md[m[m
+[36m@@ -1,3 +1,4 @@[m[m
+ Hello good morning everyone[m[m
+ hi[m[m
+ ok[m[m
+[32m+[m[32mhello[m[m
+[1mdiff --git a/fileee.txt b/fileee.txt[m[m
+[1mindex 6cedecc..4b510ca 100644[m[m
+[1m--- a/fileee.txt[m[m
+[1m+++ b/fileee.txt[m[m
+[36m@@ -1 +1 @@[m[m
+[31m-agajhggshcf[m[m
+[32m+[m[32mfjhfjhgdjagajhggshcf[m[m
+[1mdiff --git a/new.txt b/new.txt[m[m
+[1mnew file mode 100644[m[m
+[1mindex 0000000..b2fa4e7[m[m
+[1m--- /dev/null[m[m
+[1m+++ b/new.txt[m[m
+[36m@@ -0,0 +1 @@[m[m
+[32m+[m[32mdufgkdjfdijk[m[m
+[K[?1l>[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git show v3-lwtag[K v3-lw[2Pshow v2[4Ptag -l v1[K -a v2 -m "taggg"[9Pl "v1"[Kls[Kgit push origin main[2Pcommit -m "hi"add fileee.txt[8Pstatusnano fileee.txtgit checkout -b branch1[3Ppush origin main[4Pfetch origin[4Ppb[Kremote -vadd pb https://github.com/paulboone/ticgit-v[K[Kstatuse[C[C[C[C[C[C[C[Cit checkout --new.txt[11Pvim new.txt[1Pgit statusreset new1.txt[8Pstatus[1Padd *statusnano new1.txt[3Pgit statusnano new.txt[2Pgit status[1Padd *cat fileee.txt[2P.txtgit log -S hicommit --ammendr log --pretty=oneline
+[?2004lCommand 'gir' not found, did you mean:
+  command 'gio' from deb libglib2.0-bin (2.72.4-0ubuntu2)
+  command 'gip' from deb gip (1.7.0-1-5)
+  command 'gie' from deb proj-bin (8.2.1-1)
+  command 'gpr' from deb gpr (0.15deb-2build1)
+  command 'dir' from deb coreutils (8.32-4.1ubuntu1)
+  command 'gid' from deb id-utils (4.6.28-20200521ss15dab)
+  command 'xir' from deb libxir-utils (1.4-2ubuntu1)
+  command 'git' from deb git (1:2.34.1-1ubuntu1.9)
+Try: sudo apt install <deb name>
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ gir log --pretty=oneline[C[1P[1@t
+[?2004l[?1h=[33mcba7a115cd9b840d3f134963c52a065dffff59b2[m[33m ([m[1;36mHEAD -> [m[1;32mbranch1[m[33m, [m[1;33mtag: v3-lw[m[33m, [m[1;33mtag: v2[m[33m)[m hi[m
+[33m357ed672422063af088415be70a53d5eaeee538d[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m final[m
+[33m20ad66902092b780242331606c82684a5aff1286[m First[m
+[33m1bd7d17ea7ab52d5df75477ad5c508a47e72e570[m Initial commit[m
+[K[?1l>[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git tag -a v4 [7m20ad669[27m20ad669
+[?2004lhint: Waiting for your editor to close the file... [?2004h[?1049h[22;0;0t[1;35r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[33;68H(B[0;7m[ Reading... ](B[m[33;67H(B[0;7m[ Read 5 lines ](B[m[H(B[0;7m  GNU nano 6.2                                        /home/vyeshma/Assignment1.0/.git/TAG_EDITMSG                                                  [1;147H(B[m[34d(B[0;7m^G(B[m Help[34;17H(B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut[34;65H(B[0;7m^T(B[m Execute[81G(B[0;7m^C(B[m Location     (B[0;7mM-U(B[m Undo[34;113H(B[0;7mM-A(B[m Set Mark    (B[0;7mM-](B[m To Bracket[35d(B[0;7m^X(B[m Exit[35;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste[35;65H(B[0;7m^J(B[m Justify[81G(B[0;7m^/(B[m Go To Line   (B[0;7mM-E(B[m Redo[35;113H(B[0;7mM-6(B[m Copy[35;129H(B[0;7m^Q(B[m Where Was[3d[36m#[4d# Write a message for tag:[5d#   v4[6d# Lines starting with '#' will be ignored.[2d[39m(B[m[?12l[?25h[?25l[1;100H(B[0;7m*[147G(B[m[?12l[?25h[2dh[?25l[?12l[?25he[?25l[?12l[?25hl[?25l[?12l[?25hl[?25l[?12l[?25ho[?25l[33;67H (B[0;7m[ Writing... ](B[m[K[1;100H(B[0;7m [147G(B[m[33;66H(B[0;7m[ Wrote 5 lines ](B[m[?12l[?25h[2;6H[?25l[33d[J[35d[?12l[?25h[35;1H[?1049l[23;0;0t[?1l>[?2004l[K[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git tag -a v4 20ad669log --pretty=oneliner[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ct[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Ptag -a v4 20ad669[Kgit tag
+[?2004l[?1h=v2[m
+v3-lw[m
+v4[m
+[K[?1l>[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git show v3[K4
+[?2004l[?1h=[33mtag v4[m[m
+Tagger: vyeshma.vanka <vyeshma.vanka@tigeranalytics.com>[m
+Date:   Wed Oct 11 23:56:21 2023 +0530[m
+[m
+hello[m
+[m
+[33mcommit 20ad66902092b780242331606c82684a5aff1286[m[33m ([m[1;33mtag: v4[m[33m)[m[m
+Author: vyeshma.vanka <vyeshma.vanka@tigeranalytics.com>[m
+Date:   Wed Oct 11 23:33:07 2023 +0530[m
+[m
+    First[m
+[m
+[1mdiff --git a/file.txt b/file.txt[m[m
+[1mnew file mode 100644[m[m
+[1mindex 0000000..45cfddb[m[m
+[1m--- /dev/null[m[m
+[1m+++ b/file.txt[m[m
+[36m@@ -0,0 +1 @@[m[m
+[32m+[m[32m"hello i am vyeshma"[m[m
+[K[?1l>[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git push origin v3[K[K[K[K[K[K[K[K[K[K[K[K[K[Ktag
+[?2004l[?1h=v2[m
+v3-lw[m
+v4[m
+[K[?1l>[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git tagshow v4[K[K[K[K[K[K[Kpush origin v2
+[?2004lEnumerating objects: 9, done.
+Counting objects:  11% (1/9)Counting objects:  22% (2/9)Counting objects:  33% (3/9)Counting objects:  44% (4/9)Counting objects:  55% (5/9)Counting objects:  66% (6/9)Counting objects:  77% (7/9)Counting objects:  88% (8/9)Counting objects: 100% (9/9)Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects:  33% (1/3)Compressing objects:  66% (2/3)Compressing objects: 100% (3/3)Compressing objects: 100% (3/3), done.
+Writing objects:  16% (1/6)Writing objects:  33% (2/6)Writing objects:  50% (3/6)Writing objects:  66% (4/6)Writing objects:  83% (5/6)Writing objects: 100% (6/6)Writing objects: 100% (6/6), 582 bytes | 582.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:Vyeshmavanka77/Assignment1.0.git
+ * [new tag]         v2 -> v2
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git push origin v2[K[K--tags
+[?2004lEnumerating objects: 1, done.
+Counting objects: 100% (1/1)Counting objects: 100% (1/1), done.
+Writing objects: 100% (1/1)Writing objects: 100% (1/1), 162 bytes | 162.00 KiB/s, done.
+Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:Vyeshmavanka77/Assignment1.0.git
+ * [new tag]         v3-lw -> v3-lw
+ * [new tag]         v4 -> v4
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git tag --d v2[1P[C[C[C[C[C
+[?2004lDeleted tag 'v2' (was 7c73893)
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git tag
+[?2004l[?1h=v3-lw[m
+v4[m
+[K[?1l>[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git push origin --delete v4
+[?2004lssh: Could not resolve hostname github.com: Temporary failure in name resolution
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git checkout v1
+[?2004lerror: pathspec 'v1' did not match any file(s) known to git
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git checkout v1[K3-lw
+[?2004lM	new.txt
+Note: switching to 'v3-lw'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at cba7a11 hi
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git log[K[K[K[K checkout -b [K[K[K[K[K[K[K[K[K[K[K[Kbranch B
+[?2004l[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git branch A
+[?2004l[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git checkout -b B A
+[?2004lfatal: A branch named 'B' already exists.
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git checkout -b B A[1P Ac A[1P AC A
+[?2004lM	new.txt
+Switched to a new branch 'C'
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git log --pretty=oneline
+[?2004l[?1h=[33mcba7a115cd9b840d3f134963c52a065dffff59b2[m[33m ([m[1;36mHEAD -> [m[1;32mC[m[33m, [m[1;33mtag: v3-lw[m[33m, [m[1;32mbranch1[m[33m, [m[1;32mB[m[33m, [m[1;32mA[m[33m)[m hi[m
+[33m357ed672422063af088415be70a53d5eaeee538d[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m final[m
+[33m20ad66902092b780242331606c82684a5aff1286[m[33m ([m[1;33mtag: v4[m[33m)[m First[m
+[33m1bd7d17ea7ab52d5df75477ad5c508a47e72e570[m Initial commit[m
+[K[?1l>[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ if [K[Kt config --globala[K alias.st status
+[?2004lit: command not found
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ it config --global alias.st status[1@g
+[?2004l[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git st
+[?2004lOn branch C
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   new.txt[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mnew1.txt[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git add neq[Kw`[K1.txt
+[?2004l[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ [[Kgit st
+[?2004lOn branch C
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   new1.txt[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   new.txt[m
+
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git push -all
+[?2004lerror: did you mean `--all` (with two dashes)?
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git push -all[C-all
+[?2004lTotal 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:Vyeshmavanka77/Assignment1.0.git
+ * [new branch]      A -> A
+ * [new branch]      B -> B
+ * [new branch]      C -> C
+ * [new branch]      branch1 -> branch1
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git --one[K[K[K[K[Klog --pre=[K[K[K[Koneline --decorate --grp[Kaph --all
+[?2004l[?1h=* [33mcba7a11[m[33m ([m[1;36mHEAD -> [m[1;32mC[m[33m, [m[1;33mtag: v3-lw[m[33m, [m[1;31morigin/branch1[m[33m, [m[1;31morigin/C[m[33m, [m[1;31morigin/B[m[33m, [m[1;31morigin/A[m[33m, [m[1;32mbranch1[m[33m, [m[1;32mB[m[33m, [m[1;32mA[m[33m)[m hi[m
+* [33m357ed67[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m final[m
+* [33m20ad669[m[33m ([m[1;33mtag: v4[m[33m)[m First[m
+* [33m1bd7d17[m Initial commit[m
+* [33ma5d737e[m[33m ([m[1;31mpb/ticgit[m[33m)[m cleanup of ticket branch[m
+* [33md8ca45f[m added state (resolved) to ticket 1206206148_add-attachment-to-ticket_138[m
+* [33m79a1acc[m assigned paulboone@mindbucket.com to ticket 1206206148_add-attachment-to-ticket_138[m
+* [33mfccfb21[m added comment to ticket 1206207422_change-ticket-assignment_157[m
+* [33mc9337d2[m assigned schacon to ticket 1206207422_change-ticket-assignment_157[m
+* [33m1942447[m assigned paulboone@mindbucket.com to ticket 1206207422_change-ticket-assignment_157[m
+* [33mf967598[m assigned anon to ticket 1206207422_change-ticket-assignment_157[m
+*   [33mc6edfec[m Merge commit 'pope/ticgit' into ticgit[m
+[33m|[m[34m\[m  [m
+[33m|[m * [33md8e7a68[m added state (resolved) to ticket 1210439407_create-assign-action_786[m
+[33m|[m * [33m79fe155[m added ticket 1210439407_create-assign-action_786[m
+[33m|[m * [33m6511d3d[m assigned schacon@gmail.com to ticket 1206206148_add-attachment-to-ticket_138[m
+[33m|[m * [33mcd29627[m assigned anon to ticket 1206206148_add-attachment-to-ticket_138[m
+[33m|[m * [33m7382d49[m assigned pope@shifteleven.com to ticket 1206206148_add-attachment-to-ticket_138[m
+* [34m|[m [33m38b6c79[m added state (resolved) to ticket 1206305858_automated-tests_807[m
+[34m|[m[34m/[m  [m
+* [33mccc17f3[m added comment to ticket 1206206577_find-the-git-directory-properly-_425[m
+* [33md113419[m added state (resolved) to ticket 1206206577_find-the-git-directory-properly-_425[m
+[34m|[m * [33m3c92a80[m[33m ([m[1;31mpb/master[m[33m)[m fixed cli show bug[m
+[34m|[m * [33m309daff[m added attachments to tickets 9ebd07[m
+[34m|[m * [33m7e2168b[m bin/ti changed to edit local[m
+[34m|[m * [33m2bad4df[m seeing if this helps the gem[m
+[34m|[m * [33m7482e0d[m updated the gemspec to hopefully work better[m
+[34m|[m * [33m36c7dba[m updated ticgit gem[m
+[34m|[m * [33mdd56df4[m so the reference updates[m
+[34m|[m * [33mb429ad8[m removed deps from gemspec because it breaks with github[m
+[34m|[m * [33m116613a[m updated license with valid info[m
+[34m|[m * [33m4e2415a[m added a license[m
+[34m|[m * [33ma4a1aff[m - added a -f/--file option to ti comment so a comment can be provided via a file[m
+[34m|[m * [33m6e453f5[m added an example post-commit hook file[m
+:[K[K[?1l>[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git checkout -b C
+[?2004lfatal: A branch named 'C' already exists.
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git checkout -b C[KD
+[?2004lSwitched to a new branch 'D'
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git log --oneline --decorate
+[?2004l[?1h=[33mcba7a11[m[33m ([m[1;36mHEAD -> [m[1;32mD[m[33m, [m[1;33mtag: v3-lw[m[33m, [m[1;31morigin/branch1[m[33m, [m[1;31morigin/C[m[33m, [m[1;31morigin/B[m[33m, [m[1;31morigin/A[m[33m, [m[1;32mbranch1[m[33m, [m[1;32mC[m[33m, [m[1;32mB[m[33m, [m[1;32mA[m[33m)[m hi[m
+[33m357ed67[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m final[m
+[33m20ad669[m[33m ([m[1;33mtag: v4[m[33m)[m First[m
+[33m1bd7d17[m Initial commit[m
+[K[?1l>[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ gir[Kt mea[Krge A
+[?2004lAlready up to date.
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git branch -d D
+[?2004lerror: Cannot delete branch 'D' checked out at '/home/vyeshma/Assignment1.0'
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git branch -d D[KC
+[?2004lDeleted branch C (was cba7a11).
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git mergetool
+[?2004l
+This message is displayed because 'merge.tool' is not configured.
+See 'git mergetool --tool-help' or 'git help config' for more details.
+'git mergetool' will now attempt to use one of the following tools:
+opendiff kdiff3 tkdiff xxdiff meld tortoisemerge gvimdiff diffuse diffmerge ecmerge p4merge araxis bc codecompare smerge emerge vimdiff nvimdiff
+No files need merging
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git status
+[?2004lOn branch D
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   new1.txt[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   new.txt[m
+
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git branch --merged
+[?2004l[?1h=  A[m[m
+  B[m[m
+* [32mD[m[m
+  branch1[m[m
+  main[m[m
+[K[?1l>[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git branch -v
+[?2004l[?1h=  A      [m cba7a11 hi[m
+  B      [m cba7a11 hi[m
+* [32mD      [m cba7a11 hi[m
+  branch1[m cba7a11 hi[m
+  main   [m 357ed67 final[m
+[K[?1l>[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git branch --no-merged
+[?2004l[?1h=[K[?1l>[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git branch --mob[Kve Branch B
+[?2004lfatal: A branch named 'B' already exists.
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git branch --move Branch B[KC
+[?2004lerror: refname refs/heads/Branch not found
+fatal: Branch rename failed
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git branch --move Branch C[C[1P[1P[1P[1P[C[1P C
+[?2004l[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git branch --move B C[C[K[K[K[K[K[K[K[K[K[K[K[Kj[Kh
+[?2004l[?1h=  A[m[m
+  C[m[m
+* [32mD[m[m
+  branch1[m[m
+  main[m[m
+[K[?1l>[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git push --set-upstream origin C
+[?2004lBranch 'C' set up to track remote branch 'C' from 'origin'.
+Everything up-to-date
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git ge[K[Kfetch A
+[?2004lfatal: 'A' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git fetch origin
+[?2004lFrom github.com:Vyeshmavanka77/Assignment1.0
+ * [new tag]         v2         -> v2
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git push origin A
+[?2004lssh: Could not resolve hostname github.com: Temporary failure in name resolution
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git fetch --all
+[?2004lFetching origin
+Fetching pb
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git branch -vv
+[?2004l[?1h=  A      [m cba7a11 hi[m
+  C      [m cba7a11 [[34morigin/C[m] hi[m
+* [32mD      [m cba7a11 hi[m
+  branch1[m cba7a11 hi[m
+  main   [m 357ed67 [[34morigin/main[m] final[m
+[K[?1l>[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git push origin --delete A
+[?2004lTo github.com:Vyeshmavanka77/Assignment1.0.git
+ - [deleted]         A
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git rebase --onto main b2 newname
+[?2004lfatal: invalid upstream 'b2'
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git rebase --onto main b2 newname[C[1P newname[1P newnameB newname[1P newnameA newname
+[?2004lfatal: no such branch/commit 'newname'
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git rebase --onto main A newname[K[K[K[K[K[K[K[K C
+[?2004lerror: cannot rebase: You have unstaged changes.
+error: additionally, your index contains uncommitted changes.
+error: Please commit or stash them.
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git brsnch[1Pnchanch
+[?2004l[?1h=  A[m[m
+  C[m[m
+* [32mD[m[m
+  branch1[m[m
+  main[m[m
+[K[?1l>[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git checkout main
+[?2004lerror: Your local changes to the following files would be overwritten by checkout:
+	new.txt
+Please commit your changes or stash them before you switch branches.
+Aborting
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git che kout[K[K[K[K[Kckout main1
+[?2004lerror: pathspec 'main1' did not match any file(s) known to git
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git checkout main1[K[K[K[K[KC
+[?2004lM	new.txt
+A	new1.txt
+Switched to branch 'C'
+Your branch is up to date with 'origin/C'.
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git barnch [K[K[K[K[K[Kranch l
+[?2004l[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git branch -d l
+[?2004lDeleted branch l (was cba7a11).
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git branch
+[?2004l[?1h=  A[m[m
+* [32mC[m[m
+  D[m[m
+  branch1[m[m
+  main[m[m
+[K[?1l>[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ gir[Kt clone https:??[K[K//github.com/tonychacon/blink
+[?2004lCloning into 'blink'...
+remote: Enumerating objects: 23, done.[K
+remote: Total 23 (delta 0), reused 0 (delta 0), pack-reused 23[K
+Receiving objects:   4% (1/23)Receiving objects:   8% (2/23)Receiving objects:  13% (3/23)Receiving objects:  17% (4/23)Receiving objects:  21% (5/23)Receiving objects:  26% (6/23)Receiving objects:  30% (7/23)Receiving objects:  34% (8/23)Receiving objects:  39% (9/23)Receiving objects:  43% (10/23)Receiving objects:  47% (11/23)Receiving objects:  52% (12/23)Receiving objects:  56% (13/23)Receiving objects:  60% (14/23)Receiving objects:  65% (15/23)Receiving objects:  69% (16/23)Receiving objects:  73% (17/23)Receiving objects:  78% (18/23)Receiving objects:  82% (19/23)Receiving objects:  86% (20/23)Receiving objects:  91% (21/23)Receiving objects:  95% (22/23)Receiving objects: 100% (23/23)Receiving objects: 100% (23/23), done.
+Resolving deltas:   0% (0/5)Resolving deltas:  20% (1/5)Resolving deltas:  40% (2/5)Resolving deltas:  60% (3/5)Resolving deltas:  80% (4/5)Resolving deltas: 100% (5/5)Resolving deltas: 100% (5/5), done.
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ cd ..
+[?2004l[?2004h(base) ]0;vyeshma@TIGER01388: ~[01;32mvyeshma@TIGER01388[00m:[01;34m~[00m$ ls
+[?2004l[0m[01;34mAssignment[0m  [01;34mAssignment1.0[0m  [01;34mPractice[0m  git_session  [01;34mminiconda3[0m  my_git_session  my_git_session1  my_miniconda_session  my_unix_session
+[?2004h(base) ]0;vyeshma@TIGER01388: ~[01;32mvyeshma@TIGER01388[00m:[01;34m~[00m$ cd Assih[Kgnment1.0
+[?2004l[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ ls
+[?2004lREADME  README.md  [0m[01;34mblink[0m  contributor.md  fileee.txt  new.txt  new1.txt
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ cd [K[K[Kgit branch
+[?2004l[?1h=  A[m[m
+* [32mC[m[m
+  D[m[m
+  branch1[m[m
+  main[m[m
+[K[?1l>[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ cd blink
+[?2004l[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0/blink[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0/blink[00m$ f[Kgit branch
+[?2004l[?1h=* [32mmaster[m[m
+[K[?1l>[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0/blink[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0/blink[00m$ cd ..
+[?2004l[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git merge E
+[?2004lmerge: E - not something we can merge
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git merge E[KA
+[?2004lAlready up to date.
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git merge A[Kissues
+[?2004lmerge: issues - not something we can merge
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git merge issuesA[K[K[K[K[K[K[K[K[K graph -a[K-all
+[?2004lgit: 'graph' is not a git command. See 'git --help'.
+
+The most similar commands are
+	branch
+	grep
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git graph --all[C[1@-[1@-
+[?2004lunknown option: --graph
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ gir [K[Kt log --oneline --graph
+[?2004l[?1h=* [33mcba7a11[m[33m ([m[1;36mHEAD -> [m[1;32mC[m[33m, [m[1;33mtag: v3-lw[m[33m, [m[1;33mtag: v2[m[33m, [m[1;31morigin/branch1[m[33m, [m[1;31morigin/C[m[33m, [m[1;31morigin/B[m[33m, [m[1;32mbranch1[m[33m, [m[1;32mD[m[33m, [m[1;32mA[m[33m)[m hi[m
+* [33m357ed67[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m final[m
+* [33m20ad669[m[33m ([m[1;33mtag: v4[m[33m)[m First[m
+* [33m1bd7d17[m Initial commit[m
+[K[?1l>[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git log --graph
+[?2004l[?1h=* [33mcommit cba7a115cd9b840d3f134963c52a065dffff59b2[m[33m ([m[1;36mHEAD -> [m[1;32mC[m[33m, [m[1;33mtag: v3-lw[m[33m, [m[1;33mtag: v2[m[33m, [m[1;31morigin/branch1[m[33m, [m[1;31morigin/C[m[33m, [m[1;31morigin/B[m[33m, [m[1;32mbranch1[m[33m, [m[1;32mD[m[33m, [m[1;32mA[m[33m)[m[m
+[31m|[m Author: vyeshma.vanka <vyeshma.vanka@tigeranalytics.com>[m
+[31m|[m Date:   Wed Oct 11 23:53:15 2023 +0530[m
+[31m|[m [m
+[31m|[m     hi[m
+[31m|[m [m
+* [33mcommit 357ed672422063af088415be70a53d5eaeee538d[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m[m
+[31m|[m Author: vyeshma.vanka <vyeshma.vanka@tigeranalytics.com>[m
+[31m|[m Date:   Wed Oct 11 23:43:57 2023 +0530[m
+[31m|[m [m
+[31m|[m     final[m
+[31m|[m [m
+* [33mcommit 20ad66902092b780242331606c82684a5aff1286[m[33m ([m[1;33mtag: v4[m[33m)[m[m
+[31m|[m Author: vyeshma.vanka <vyeshma.vanka@tigeranalytics.com>[m
+[31m|[m Date:   Wed Oct 11 23:33:07 2023 +0530[m
+[31m|[m [m
+[31m|[m     First[m
+[31m|[m [m
+* [33mcommit 1bd7d17ea7ab52d5df75477ad5c508a47e72e570[m[m
+  Author: Vyeshmavanka77 <vyeshma.vanka@tigeranalytics.com>[m
+  Date:   Wed Oct 11 23:58:31 2023 +0530[m
+  [m
+      Initial commit[m
+[K[?1l>[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ gir [K[Kt merfe=[K[K[Kge A B
+[?2004lmerge: B - not something we can merge
+
+Did you mean this?
+	origin/B
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git merge A B[Kc[Kc[KC
+[?2004lAlready up to date.
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git status
+[?2004lOn branch C
+Your branch is up to date with 'origin/C'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   new1.txt[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   new.txt[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mblink/[m
+
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git ass[K[K[Kadd new.txt
+[?2004l[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git status
+[?2004lOn branch C
+Your branch is up to date with 'origin/C'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mmodified:   new.txt[m
+	[32mnew file:   new1.txt[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mblink/[m
+
+'[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ 'git [K[K[K[K[Kgit add blink/
+[?2004lwarning: adding embedded git repository: blink
+[33mhint: You've added another git repository inside your current repository.[m
+[33mhint: Clones of the outer repository will not contain the contents of[m
+[33mhint: the embedded repository and will not know how to obtain it.[m
+[33mhint: If you meant to add a submodule, use:[m
+[33mhint: [m
+[33mhint: 	git submodule add <url> blink[m
+[33mhint: [m
+[33mhint: If you added this path by mistake, you can remove it from the[m
+[33mhint: index with:[m
+[33mhint: [m
+[33mhint: 	git rm --cached blink[m
+[33mhint: [m
+[33mhint: See "git help submodule" for more information.[m
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git status
+[?2004lOn branch C
+Your branch is up to date with 'origin/C'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   blink[m
+	[32mmodified:   new.txt[m
+	[32mnew file:   new1.txt[m
+
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git add *
+[?2004l[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git status
+[?2004lOn branch C
+Your branch is up to date with 'origin/C'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   blink[m
+	[32mmodified:   new.txt[m
+	[32mnew file:   new1.txt[m
+
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ cd blinl[Kk
+[?2004l[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0/blink[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0/blink[00m$ git status'[K
+[?2004lOn branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0/blink[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0/blink[00m$ git checkout slow-blink
+[?2004lBranch 'slow-blink' set up to track remote branch 'slow-blink' from 'origin'.
+Switched to a new branch 'slow-blink'
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0/blink[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0/blink[00m$ ls
+[?2004lREADME.md  blink.ino
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0/blink[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0/blink[00m$ cd blink
+[?2004lbash: cd: blink: No such file or directory
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0/blink[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0/blink[00m$ ls
+[?2004lREADME.md  blink.ino
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0/blink[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0/blink[00m$ git status
+[?2004lOn branch slow-blink
+Your branch is up to date with 'origin/slow-blink'.
+
+nothing to commit, working tree clean
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0/blink[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0/blink[00m$ cd ..
+[?2004l[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git add blink.[K/
+[?2004l[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git status'[K
+[?2004lOn branch C
+Your branch is up to date with 'origin/C'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   blink[m
+	[32mmodified:   new.txt[m
+	[32mnew file:   new1.txt[m
+
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git add blink
+[?2004l[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git status'[K
+[?2004lOn branch C
+Your branch is up to date with 'origin/C'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   blink[m
+	[32mmodified:   new.txt[m
+	[32mnew file:   new1.txt[m
+
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git commit -m "All commiot[K[Kt"
+[?2004l[C 391c056] All commit
+ 3 files changed, 3 insertions(+), 1 deletion(-)
+ create mode 160000 blink
+ create mode 100644 new1.txt
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git commit -m "All commit"status[K
+[?2004lOn branch C
+Your branch is ahead of 'origin/C' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git statuscommit -m "All commit"status[Kadd blink[3Pstatusadd blink/[9Pcd ..git statusls[Kcd blinkls[Kgit checkout slow-blinkstatus[K[2Pcd blinkgit status[1Padd *statusadd blink/[4Pstatusadd new.txt[5Pstatusmerge A CB[KC
+[?2004lAlready up to date.
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ ls
+[?2004lREADME  README.md  [0m[01;34mblink[0m  contributor.md  fileee.txt  new.txt  new1.txt
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ lsgit merge A C[K[K[K[K[K[K[K[K[Kbranch
+[?2004l[?1h=  A[m[m
+* [32mC[m[m
+  D[m[m
+  branch1[m[m
+  main[m[m
+[K[?1l>[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git branchls[Kgit merge A C[3Pstatuscommit -m "All commit"status[Kadd blink[3Pstatusadd blink/[9Pcd ..git statusls[Kcd blinkls[Kgit checkout slow-blinkstatus[Kcheckout slow-blink[K[K[K[K[K[K[K[K[K[K[K -b new
+[?2004lSwitched to a new branch 'new'
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ git push -u origin new
+[?2004lEnumerating objects: 6, done.
+Counting objects:  16% (1/6)Counting objects:  33% (2/6)Counting objects:  50% (3/6)Counting objects:  66% (4/6)Counting objects:  83% (5/6)Counting objects: 100% (6/6)Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects:  50% (1/2)Compressing objects: 100% (2/2)Compressing objects: 100% (2/2), done.
+Writing objects:  25% (1/4)Writing objects:  50% (2/4)Writing objects:  75% (3/4)Writing objects: 100% (4/4)Writing objects: 100% (4/4), 375 bytes | 375.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+remote: 
+remote: Create a pull request for 'new' on GitHub by visiting:[K
+remote:      https://github.com/Vyeshmavanka77/Assignment1.0/pull/new/new[K
+remote: 
+To github.com:Vyeshmavanka77/Assignment1.0.git
+ * [new branch]      new -> new
+Branch 'new' set up to track remote branch 'new' from 'origin'.
+[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ code
+[?2004l[?2004h(base) ]0;vyeshma@TIGER01388: ~/Assignment1.0[01;32mvyeshma@TIGER01388[00m:[01;34m~/Assignment1.0[00m$ exit
+[?2004lexit
+
+Script done on 2023-10-12 12:30:20+05:30 [COMMAND_EXIT_CODE="0"]
